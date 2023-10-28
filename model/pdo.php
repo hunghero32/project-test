@@ -4,6 +4,7 @@ function pdo_get_connection(){
     $username = "root";
     $password = "";
     try {
+        //Nhớ Đổi tên của DB name nha 
         $conn = new PDO("mysql:host=$servername;dbname=sql", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $conn;
